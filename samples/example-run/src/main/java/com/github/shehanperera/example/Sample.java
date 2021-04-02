@@ -6,7 +6,6 @@ import java.lang.reflect.Field;
 public class Sample {
 
   public static void main(String[] args) throws Exception {
-
     System.out.println("This is Sample main");
 
     Method method = new Method();

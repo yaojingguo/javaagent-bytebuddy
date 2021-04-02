@@ -6,10 +6,12 @@ import net.bytebuddy.matcher.ElementMatchers;
 
 import java.lang.instrument.Instrumentation;
 
+import static com.github.shehanperera.addfield.Tools.*;
+
 /** This is the agent for set and get values form running class */
 public class Agent {
   public static void premain(String arguments, Instrumentation instrumentation) {
-    System.out.println("Agent for add fields ");
+    Tools.println("Agent for add fields ");
 
     new AgentBuilder.Default()
         .with(new AgentBuilder.InitializationStrategy.SelfInjection.Eager())

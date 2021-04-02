@@ -11,6 +11,6 @@ public class SetField {
       throws Exception {
     bool = true;
     word = "New String Field";
-    System.out.printf("Adding boolean (%b) and String (%s) Fields\n", bool, word);
+    Tools.printf("Adding boolean (%b) and String (%s) Fields\n", bool, word);
   }
 }

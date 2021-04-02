@@ -12,7 +12,7 @@ public class GetField {
       @Advice.FieldValue(value = "bool") boolean bool,
       @Advice.FieldValue(value = "word") String word)
       throws Exception {
-    System.out.println("Getting New Fields");
-    System.out.println("boolean value is " + bool + " and String value is " + word);
+    Tools.println("Getting New Fields");
+    Tools.println("boolean value is " + bool + " and String value is " + word);
   }
 }
