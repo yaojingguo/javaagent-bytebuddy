@@ -16,6 +16,10 @@ public class Util {
     System.out.println(AGENT_PREFIX + " " + x);
   }
 
+  public static void println(Object x) {
+    System.out.println(AGENT_PREFIX + " " + String.valueOf(x));
+  }
+
   public static void printf(String format, Object ... args) {
     System.out.printf(AGENT_PREFIX + " " + format, args);
   }
