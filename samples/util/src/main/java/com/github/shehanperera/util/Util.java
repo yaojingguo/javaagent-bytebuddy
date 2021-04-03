@@ -13,11 +13,11 @@ public class Util {
   public static final String AGENT_PREFIX = ANSI_GREEN + "[Agent]" + ANSI_RESET;
 
   public static void println(String x) {
-    System.out.println(AGENT_PREFIX + x);
+    System.out.println(AGENT_PREFIX + " " + x);
   }
 
   public static void printf(String format, Object ... args) {
-    System.out.printf(AGENT_PREFIX + format, args);
+    System.out.printf(AGENT_PREFIX + " " + format, args);
   }
   public static void sleep(int mills) {
     try {

@@ -6,14 +6,14 @@ import java.lang.reflect.Field;
 public class Sample {
 
   public static void main(String[] args) throws Exception {
-    System.out.println("This is Sample main");
+    System.out.println("[Sample] This is Sample main");
 
     Method method = new Method();
     method.method1();
     method.method2();
     method.method4(4, "parameters", true);
 
-    System.out.printf("class: %s\n", method.getClass());
+    System.out.printf("[Sample] class: %s\n", method.getClass());
 
 //    Field field = method.getClass().getDeclaredField("word");
 //    field.setAccessible(true);
