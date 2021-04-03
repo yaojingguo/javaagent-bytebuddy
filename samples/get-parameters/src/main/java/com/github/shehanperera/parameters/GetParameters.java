@@ -6,7 +6,7 @@ import net.bytebuddy.asm.Advice;
 public class GetParameters {
 
   @Advice.OnMethodExit
-  public static void getParametrs(@Advice.Origin String method, @Advice.AllArguments Object[] para)
+  public static void getParameters(@Advice.Origin String method, @Advice.AllArguments Object[] para)
       throws Exception {
     Util.println(method);
     /*This is use for get class of parameters to get
