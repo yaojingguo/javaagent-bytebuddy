@@ -13,7 +13,9 @@ public class Sample {
     method.method2();
     method.method4(4, "parameters", true);
 
-    System.out.printf("[Sample] class: %s\n", method.getClass());
+    // It causes the following exception for ignore-class
+    // Exception: java.lang.NoClassDefFoundError thrown from the UncaughtExceptionHandler in thread "main"
+//    System.out.printf("[Sample] class: %s\n", method.getClass());
 
 //    Field field = method.getClass().getDeclaredField("word");
 //    field.setAccessible(true);

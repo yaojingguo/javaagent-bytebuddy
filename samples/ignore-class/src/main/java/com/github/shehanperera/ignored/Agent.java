@@ -1,11 +1,10 @@
 package com.github.shehanperera.ignored;
 
 import com.github.shehanperera.util.Util;
+import java.lang.instrument.Instrumentation;
 import net.bytebuddy.agent.builder.AgentBuilder;
 import net.bytebuddy.asm.Advice;
 import net.bytebuddy.matcher.ElementMatchers;
-
-import java.lang.instrument.Instrumentation;
 
 /**
  * This is a agent for instrument class that ignored by byte-buddy. Normally byte-buddy ignore java
@@ -13,7 +12,6 @@ import java.lang.instrument.Instrumentation;
  * .visit for get more details of methods and constructors in these ignored class
  */
 public class Agent {
-
   public static void premain(String arguments, Instrumentation instrumentation) {
     Util.println("Agent for instrument ignored class like java class ");
 
