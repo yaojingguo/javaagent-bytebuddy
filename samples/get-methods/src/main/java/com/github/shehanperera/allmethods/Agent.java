@@ -12,7 +12,6 @@ import java.lang.instrument.Instrumentation;
  * .type((ElementMatchers.named())) To get specific method use : .method(ElementMatchers.named())
  */
 public class Agent {
-
   public static void premain(String arguments, Instrumentation instrumentation) {
     Util.println("Agent for get all methods");
 
