@@ -14,6 +14,6 @@ public class Constructor {
   static void exitConstructor(@Advice.Origin String method, @Advice.Enter long start)
       throws Exception {
     long end = System.currentTimeMillis();
-    Util.println("This is Constructor :" + method + "took " + (end - start) + " milliseconds ");
+    Util.println("This Constructor " + method + "took " + (end - start) + " milliseconds ");
   }
 }

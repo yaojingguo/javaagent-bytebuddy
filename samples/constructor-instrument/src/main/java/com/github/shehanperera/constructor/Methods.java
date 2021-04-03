@@ -13,6 +13,6 @@ public class Methods {
   @Advice.OnMethodExit
   static void exitMethods(@Advice.Origin String method, @Advice.Enter long start) throws Exception {
     long end = System.currentTimeMillis();
-    Util.println("This is Method :" + method + "took " + (end - start) + " milliseconds ");
+    Util.println("This Method " + method + "took " + (end - start) + " milliseconds ");
   }
 }
