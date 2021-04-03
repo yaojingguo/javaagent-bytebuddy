@@ -16,6 +16,6 @@ public class Method {
   }
 
   public void method4(int number, String word, boolean bool) {
-    System.out.println("String :" + word + " and number :" + number + " and boolean :" + bool);
+    System.out.println("String: " + word + ", number: " + number + ", and boolean: " + bool);
   }
 }
