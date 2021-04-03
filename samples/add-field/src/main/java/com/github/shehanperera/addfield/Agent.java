@@ -1,17 +1,16 @@
 package com.github.shehanperera.addfield;
 
+import java.lang.instrument.Instrumentation;
 import net.bytebuddy.agent.builder.AgentBuilder;
 import net.bytebuddy.asm.Advice;
 import net.bytebuddy.matcher.ElementMatchers;
 
-import java.lang.instrument.Instrumentation;
-
-import static com.github.shehanperera.addfield.Tools.*;
+import com.github.shehanperera.util.Util;
 
 /** This is the agent for set and get values form running class */
 public class Agent {
   public static void premain(String arguments, Instrumentation instrumentation) {
-    Tools.println("Agent for add fields ");
+    Util.println("Agent for add fields ");
 
     new AgentBuilder.Default()
         .with(new AgentBuilder.InitializationStrategy.SelfInjection.Eager())

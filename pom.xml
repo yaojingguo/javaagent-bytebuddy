@@ -18,6 +18,7 @@
     </licenses>
 
     <modules>
+        <module>samples/util</module>
         <module>samples/get-methods</module>
         <module>samples/example-run</module>
         <module>samples/execution-time</module>
