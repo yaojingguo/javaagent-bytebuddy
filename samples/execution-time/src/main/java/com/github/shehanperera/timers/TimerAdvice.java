@@ -1,5 +1,6 @@
 package com.github.shehanperera.timers;
 
+import com.github.shehanperera.util.Util;
 import net.bytebuddy.asm.Advice;
 
 public class TimerAdvice {
@@ -16,6 +17,6 @@ public class TimerAdvice {
   @Advice.OnMethodExit
   static void exit(@Advice.Origin String method, @Advice.Enter long start) throws Exception {
     long end = System.currentTimeMillis();
-    System.out.println(method + " took " + (end - start) + " milliseconds ");
+    Util.println(method + " took " + (end - start) + " milliseconds ");
   }
 }
