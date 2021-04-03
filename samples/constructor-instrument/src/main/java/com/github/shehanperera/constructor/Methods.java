@@ -4,7 +4,6 @@ import net.bytebuddy.asm.Advice;
 import com.github.shehanperera.util.Util;
 
 public class Methods {
-
   @Advice.OnMethodEnter
   static long enterMethods() throws Exception {
     long start = System.currentTimeMillis();
