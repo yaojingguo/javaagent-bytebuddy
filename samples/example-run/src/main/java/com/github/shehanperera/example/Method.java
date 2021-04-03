@@ -1,7 +1,7 @@
 package com.github.shehanperera.example;
 
 public class Method {
-  Method() {
+  public Method() {
     System.out.println("This is constructor ");
   }
 

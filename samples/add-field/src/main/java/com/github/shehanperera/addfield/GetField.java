@@ -1,5 +1,6 @@
 package com.github.shehanperera.addfield;
 
+import com.github.shehanperera.util.Util;
 import net.bytebuddy.asm.Advice;
 
 public class GetField {
@@ -12,7 +13,7 @@ public class GetField {
       @Advice.FieldValue(value = "bool") boolean bool,
       @Advice.FieldValue(value = "word") String word)
       throws Exception {
-    Tools.println("Getting New Fields");
-    Tools.println("boolean value is " + bool + " and String value is " + word);
+    Util.println("Getting New Fields");
+    Util.println("boolean value is " + bool + " and String value is " + word);
   }
 }

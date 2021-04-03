@@ -15,9 +15,9 @@ public class Sample {
 
     System.out.printf("class: %s\n", method.getClass());
 
-    Field field = method.getClass().getDeclaredField("word");
-    field.setAccessible(true);
-    Object value = field.get(method);
-    System.out.printf("field value: %s\n", value);
+//    Field field = method.getClass().getDeclaredField("word");
+//    field.setAccessible(true);
+//    Object value = field.get(method);
+//    System.out.printf("field value: %s\n", value);
   }
 }
