@@ -9,7 +9,6 @@ import java.lang.instrument.Instrumentation;
 
 /** This an agent for instrument method4 in Method class and get parameters of method4 */
 public class Agent {
-
   public static void premain(String arguments, Instrumentation instrumentation) {
     Util.println("Agent for get parameters in method 4");
     new AgentBuilder.Default()
